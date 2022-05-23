@@ -1,0 +1,15 @@
+header {
+  position: sticky;
+  background-color: white;
+  top: 0;
+  padding: 1rem 2rem;
+  list-style: none;
+}
+
+footer {
+  position: sticky;
+  background: #282d46;
+  padding-block: 1rem;
+  color: white;
+  top: 100vh;
+}
