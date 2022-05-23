@@ -1,11 +1,85 @@
+/* header */
 header {
-  position: sticky;
-  background-color: white;
-  top: 0;
-  padding: 1rem 2rem;
-  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 2rem;
+  /* border: 1px solid black; */
 }
 
+nav a {
+  align-items: start;
+  justify-content: center;
+  padding: 4px;
+  width: 100px;
+  border-radius: 10px;
+  text-align: center;
+  color: black;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.logo {
+  height: 50px;
+  width: 50px;
+  grid-column: 2;
+  grid-row: 1;
+  justify-self: center;
+}
+
+.sprog {
+  grid-column: 3;
+  grid-row: 1;
+  justify-self: end;
+}
+
+nav {
+  grid-column: 2;
+  grid-row: 2;
+  justify-self: end;
+  display: none;
+}
+
+ul {
+  /* display: flex; */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 0.4rem;
+  gap: 20px;
+}
+
+@media (min-width: 600px) {
+  header {
+    grid-template-columns: revert;
+  }
+  ul {
+    display: flex;
+  }
+
+  .logo {
+    height: 100px;
+    width: 100px;
+    grid-column: 1;
+    grid-row: 1 / span 2;
+  }
+
+  .sprog {
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: end;
+  }
+
+  nav {
+    grid-column: 2;
+    grid-row: 2;
+    justify-self: end;
+    display: block;
+  }
+}
+
+/* footer */
 footer {
   position: sticky;
   background: #282d46;
@@ -14,6 +88,7 @@ footer {
   top: 100vh;
 }
 
+/* typografi */
 h1 {
   font-family: "Courier New", Courier, monospace;
   font-weight: 400;
