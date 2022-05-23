@@ -15,13 +15,41 @@ footer {
 }
 
 h1 {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3rem;
+  line-height: 1.1;
+  margin: 20px;
+  color: black;
 }
 
 h2 {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+  line-height: 1.1;
+  margin: 20px;
+  color: black;
 }
 
 h3 {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5rem;
+  line-height: 1.1;
+  margin: 20px;
+  color: black;
 }
 
 p {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 1.1;
+  margin: 20px;
+  color: black;
 }
