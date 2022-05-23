@@ -1,0 +1,24 @@
+img {
+  max-width: 100%;
+}
+
+#container_1 {
+  background-color: #f0f0f0;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  padding-top: 5%;
+}
+
+.splash_img {
+  background-image: url(/billeder/cookies.jpg);
+  background-size: cover;
+  background-position: 50%;
+  width: 1000px;
+  height: 400px;
+  margin: 0 auto;
+}
+
+h3 {
+  text-align: center;
+}
