@@ -6,7 +6,7 @@
 }
 
 /* header */
-header {
+/* header {
   background: #282d46;
   position: sticky;
   top: 0%;
@@ -18,10 +18,12 @@ header .logo {
   font-size: 2rem;
   font-weight: 900;
   color: white;
-  text-align: left;
   text-transform: uppercase;
   display: block;
-  padding: 20px 20px;
+  padding: 0px 20px;
+}
+header .logo img {
+  width: 150px;
 }
 header nav ul {
   display: block;
@@ -38,10 +40,11 @@ header nav ul li a {
   font-size: 1rem;
   color: white;
   text-transform: uppercase;
+  text-align: left;
 }
 header .header-cases {
   display: none;
-}
+} */
 
 /* andet */
 body {
@@ -200,7 +203,7 @@ input[type="checkbox"] {
     background: rgb(220, 218, 218);
     margin: 0 auto;
     text-align: center;
-    max-width: 450px;
+    max-width: 400px;
     padding: 30px 30px;
     border-radius: 5px;
     color: rgb(124, 124, 124);
@@ -208,19 +211,21 @@ input[type="checkbox"] {
     margin-top: 100px;
   }
   .newsletter h1 {
-    font-size: 2.2rem;
+    font-size: 2rem;
     font-style: italic;
+    margin-top: 2px;
+    margin: 10px 0px 10px -10px;
   }
   .newsletter hr {
-    width: 100px;
+    width: 125px;
     height: 3px;
-    margin: 15px auto;
+    margin: 15px 110px;
     border: 0;
     background: rgb(124, 124, 124);
   }
   .newsletter input {
     background-color: rgba(0, 0, 0, 0.4);
-    width: 75%;
+    width: 65%;
     height: 50px;
     border: 0;
     background: rgba(255, 255, 255, 0.5);
@@ -262,7 +267,7 @@ input[type="checkbox"] {
     text-align: start;
     display: flex;
     gap: 0.7rem;
-    width: 400px;
+    width: 325px;
   }
 }
 
