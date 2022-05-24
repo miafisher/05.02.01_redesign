@@ -33,7 +33,18 @@ nav a {
   grid-row: 1;
   justify-self: end;
 }
+.flag-mode {
+  background-color: white;
+  color: white;
+}
 
+#flag {
+  height: 51px;
+  width: 51px;
+  grid-column: 2;
+  grid-row: 1;
+  justify-self: center;
+}
 nav {
   grid-column: 2;
   grid-row: 2;

@@ -1,0 +1,20 @@
+img {
+  max-width: 100%;
+}
+
+#container_1 {
+  background-color: #ffffff;
+}
+.grid_1-2 {
+  background-color: #d1c9cc;
+}
+
+h3 {
+  text-align: center;
+}
+
+.grid_1-2 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 10px;
+}
