@@ -1,4 +1,4 @@
-/* header */
+/* header (mobile first) */
 header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -50,7 +50,7 @@ ul {
   gap: 20px;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 500px) {
   header {
     grid-template-columns: revert;
   }
@@ -79,7 +79,7 @@ ul {
   }
 }
 
-/* footer */
+/* footer (mobile first) */
 footer {
   position: sticky;
   background: #282d46;
