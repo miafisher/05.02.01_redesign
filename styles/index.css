@@ -22,3 +22,59 @@ img {
 h3 {
   text-align: center;
 }
+
+#container_2 {
+  background-color: #c49b72;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  padding-top: 5%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(8, 50px);
+  gap: 10px;
+}
+
+.img_1 {
+  background-image: url(/billeder/img_2.jpg);
+  background-size: cover;
+  background-position: 50%;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  grid-column: 2;
+  grid-row: 2 / span 2;
+}
+
+.img_2 {
+  background-image: url(/billeder/img_1.jpg);
+  background-size: cover;
+  background-position: 50%;
+  width: 200px;
+  height: 300px;
+  margin: 0 auto;
+  grid-column: 2 / span 2;
+  grid-row: 3 / span 3;
+}
+
+.img_3 {
+  background-image: url(/billeder/img_3.jpg);
+  background-size: cover;
+  background-position: 50%;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  grid-column: 3 / span 2;
+  grid-row: 2 / span 3;
+}
+
+.img_4 {
+  background-image: url(/billeder/img_4.jpg);
+  background-size: cover;
+  background-position: 50%;
+  width: 200px;
+  height: 300px;
+  margin: 0 auto;
+  grid-column: 4 / span 2;
+  grid-row: 3 / span 2;
+}
