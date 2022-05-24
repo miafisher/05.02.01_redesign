@@ -6,14 +6,14 @@
 }
 
 /* header */
-/* header {
-  background: rgb(243, 151, 247);
+header {
+  background: #282d46;
   position: sticky;
   top: 0%;
   padding: 1rem 1rem;
-} */
+}
 
-/* header .logo {
+header .logo {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 2rem;
   font-weight: 900;
@@ -21,10 +21,9 @@
   text-align: left;
   text-transform: uppercase;
   display: block;
-  /* margin: 0 auto; */
-/* padding: 20px 20px;
-} */
-/* header nav ul {
+  padding: 20px 20px;
+}
+header nav ul {
   display: block;
   margin: 0 auto;
   width: fit-content;
@@ -37,12 +36,12 @@ header nav ul li {
 header nav ul li a {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 1rem;
-  color: #111;
+  color: white;
   text-transform: uppercase;
 }
 header .header-cases {
   display: none;
-} */
+}
 
 /* andet */
 body {
@@ -50,7 +49,7 @@ body {
 }
 .content {
   display: grid;
-  grid-template-columns: 1fr 2fr 1.5fr;
+  grid-template-columns: 1fr 2fr 1.2fr;
   gap: 1.5rem;
   /* margin: 20px 500px 20px 400px; */
 }
@@ -143,12 +142,7 @@ footer ul li a {
   border: 0;
   background: rgb(124, 124, 124);
 }
-.newsletter p {
-  font-size: 1rem;
-  line-height: 24px;
-  /* background: rgb(124, 124, 124); */
-  margin-bottom: 30px;
-}
+
 .newsletter input {
   border-radius: 0px;
   background-color: rgba(0, 0, 0, 0.4);
@@ -198,4 +192,100 @@ input[type="checkbox"] {
   display: flex;
   gap: 0.7rem;
   width: 400px;
+}
+@media (max-width: 800px) {
+  .newsletter {
+    display: grid;
+    grid-template-columns: 1fr;
+    background: rgb(220, 218, 218);
+    margin: 0 auto;
+    text-align: center;
+    max-width: 450px;
+    padding: 30px 30px;
+    border-radius: 5px;
+    color: rgb(124, 124, 124);
+    margin-bottom: 100px;
+    margin-top: 100px;
+  }
+  .newsletter h1 {
+    font-size: 2.2rem;
+    font-style: italic;
+  }
+  .newsletter hr {
+    width: 100px;
+    height: 3px;
+    margin: 15px auto;
+    border: 0;
+    background: rgb(124, 124, 124);
+  }
+  .newsletter input {
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 75%;
+    height: 50px;
+    border: 0;
+    background: rgba(255, 255, 255, 0.5);
+    margin-bottom: 10px;
+    outline: none;
+    box-sizing: border-box;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  ::placeholder {
+    color: rgb(124, 124, 124);
+  }
+  .newsletter button {
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    height: 50px;
+    background-color: transparent;
+    color: rgb(124, 124, 124);
+    padding: 0px 28px;
+    cursor: pointer;
+    transition: 0.5s;
+    flex-shrink: 0;
+  }
+  .newsletter button:hover {
+    background-color: #282d46;
+    border-color: 00138e;
+  }
+  .wrap {
+    display: flex;
+  }
+  input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    background: #fff;
+    flex-shrink: 0;
+    margin-top: 4px;
+    margin-left: 0px;
+  }
+  .checkbox {
+    text-align: start;
+    display: flex;
+    gap: 0.7rem;
+    width: 400px;
+  }
+}
+
+@media (max-width: 900px) {
+  .content {
+    display: grid;
+    grid-template-columns: 0.5fr 3fr 0.5fr;
+    gap: 1.5rem;
+  }
+  .grid_1_2_1 {
+    grid-column: 2/3;
+  }
+  .content h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding: 2px;
+    margin-top: 120px;
+    margin-left: 8px;
+  }
+  p {
+    font-size: 1.2rem;
+    line-height: 25px;
+    padding: 11px;
+  }
 }
