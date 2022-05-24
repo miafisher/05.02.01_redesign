@@ -6,14 +6,14 @@
 }
 
 /* header */
-header {
+/* header {
   background: rgb(243, 151, 247);
   position: sticky;
   top: 0%;
   padding: 1rem 1rem;
-}
+} */
 
-header .logo {
+/* header .logo {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 2rem;
   font-weight: 900;
@@ -22,9 +22,9 @@ header .logo {
   text-transform: uppercase;
   display: block;
   /* margin: 0 auto; */
-  padding: 20px 20px;
-}
-header nav ul {
+/* padding: 20px 20px;
+} */
+/* header nav ul {
   display: block;
   margin: 0 auto;
   width: fit-content;
@@ -42,7 +42,8 @@ header nav ul li a {
 }
 header .header-cases {
   display: none;
-}
+} */
+*/
 
 /* andet */
 body {
