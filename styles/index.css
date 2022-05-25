@@ -23,16 +23,16 @@ main {
   padding: 5%;
 }
 
-@media (orientation: portrait) and (max-width: 800px) {
-  .splash_img {
-    background-image: url(/billeder/cookies.jpg);
-    background-size: cover;
-    width: 100%;
-    height: auto;
-    aspect-ratio: 35/20;
-    margin: 0 auto;
-  }
+/* @media (orientation: portrait) and (max-width: 800px) { */
+.splash_img {
+  background-image: url(/billeder/cookies.jpg);
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 35/20;
+  margin: 0 auto;
 }
+/* } */
 /* .splash_img {
   background-image: url(/billeder/cookies.jpg);
   background-size: cover;
@@ -303,7 +303,7 @@ input[type="checkbox"] {
     /* border-radius: 5px; */
     color: rgb(124, 124, 124);
     margin-bottom: 200px;
-    margin-top: 200px;
+    margin-top: 100px;
   }
   .newsletter h1 {
     margin-top: 10px;
