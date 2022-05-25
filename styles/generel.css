@@ -1,3 +1,7 @@
+body {
+  margin: 0;
+}
+
 img {
   max-width: 100%;
 }
@@ -6,7 +10,8 @@ img {
 header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin: 2rem;
+  padding: 1rem 2rem 0rem 1rem;
+  background-color: white;
   /* border: 1px solid black; */
 }
 
@@ -19,7 +24,7 @@ nav a {
   text-align: center;
   color: black;
   font-family: "Times New Roman", Times, serif;
-  font-size: 15px;
+  font-size: 1rem;
   font-weight: bold;
   text-decoration: none;
 }
