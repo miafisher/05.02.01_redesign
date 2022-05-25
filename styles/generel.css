@@ -67,7 +67,6 @@ nav {
 }
 
 ul {
-  /* display: flex; */
   list-style: none;
   margin: 0;
   padding: 0;
@@ -100,9 +99,9 @@ ul {
   header {
     grid-template-columns: revert;
   }
-  ul {
+  /* ul {
     display: flex;
-  }
+  } */
 
   .logo {
     height: 100px;
@@ -133,6 +132,11 @@ ul {
     cursor: pointer; */
 
     display: none; /* Skjul knappen som standard */
+  }
+
+  .main-menu ul {
+    display: flex;
+    justify-content: flex-end;
   }
 }
 
