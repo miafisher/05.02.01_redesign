@@ -11,7 +11,7 @@ header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   padding: 1rem 2rem 0rem 1rem;
-  background-color: white;
+  background: #282d46;
   /* border: 1px solid black; */
 }
 
@@ -22,10 +22,9 @@ nav a {
   width: 100px;
   border-radius: 10px;
   text-align: center;
-  color: black;
+  color: white;
   font-family: "Times New Roman", Times, serif;
-  font-size: 1rem;
-  font-weight: bold;
+  font-size: 1.1rem;
   text-decoration: none;
 }
 
