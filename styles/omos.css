@@ -1,9 +1,9 @@
-*:not(input) {
+/* *:not(input) {
   all: unset;
   display: revert;
   cursor: revert;
   box-sizing: border-box;
-}
+} */
 
 /* header */
 /* header {
