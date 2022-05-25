@@ -1,8 +1,37 @@
 img {
   max-width: 100%;
 }
+p {
+  text-align: center;
+
+  font-family: "Avenir Book";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 1.1;
+  margin: 20px;
+  color: black;
+}
+
+h2 {
+  font-family: trajan-pro-3, serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.5rem;
+  line-height: 1.1;
+  margin: 20px;
+  color: black;
+  text-align: center;
+}
+
 h3 {
   text-align: center;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 1.1;
+  margin: 20px;
+  color: black;
 }
 
 .grid_1-1-1 {
