@@ -1,3 +1,7 @@
+body {
+  margin: 0;
+}
+
 img {
   max-width: 100%;
 }
@@ -6,7 +10,8 @@ img {
 header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin: 2rem;
+  padding: 1rem 2rem 0rem 1rem;
+  background-color: white;
   /* border: 1px solid black; */
 }
 
@@ -19,7 +24,7 @@ nav a {
   text-align: center;
   color: black;
   font-family: "Times New Roman", Times, serif;
-  font-size: 15px;
+  font-size: 1rem;
   font-weight: bold;
   text-decoration: none;
 }
@@ -42,6 +47,11 @@ nav a {
   color: white;
 }
 
+.knap {
+  border: none;
+  padding: 0;
+  background: none;
+}
 #flag {
   height: 51px;
   width: 51px;
@@ -62,7 +72,7 @@ ul {
   margin: 0;
   padding: 0;
   padding-bottom: 0.4rem;
-  gap: 20px;
+  gap: 50px;
 }
 
 .toggle-btn {
@@ -136,8 +146,9 @@ footer {
 }
 
 /* typografi */
+
 h1 {
-  font-family: "Courier New", Courier, monospace;
+  font-family: trajan-pro-3, serif;
   font-weight: 400;
   font-style: normal;
   font-size: 3rem;
