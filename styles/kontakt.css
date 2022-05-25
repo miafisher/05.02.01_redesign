@@ -1,0 +1,26 @@
+body {
+  background-color: rgb(195, 154, 114);
+}
+p {
+  color: white;
+  line-height: 0.5rem;
+}
+h1 {
+  color: white;
+}
+
+#galleri {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 20px;
+}
+p {
+  color: white;
+}
+img {
+  width: 100%;
+}
+main {
+  max-width: 1200px;
+  margin: auto auto;
+}
