@@ -65,6 +65,27 @@ ul {
   gap: 20px;
 }
 
+.toggle-btn {
+  display: block; /* Vis knappen, når viewporten maksimalt er 600px */
+}
+
+.main-menu {
+  display: contents; /* Fjern ".main-menu"-boksen fra ligningen, når viewporten maksimalt er 600px, men behold børnene, så disse deltager i flex-kontekten */
+}
+
+.main-menu ul {
+  display: none; /* Fjern menu-listen som standard */
+}
+
+.main-menu.shown ul {
+  /* Vis menu-listen, når klassen ".shown" er til stede */
+  border-top: 1px solid #000;
+  padding-top: 1rem;
+  display: flex;
+  flex: 1 1 100%;
+  flex-flow: column;
+}
+
 @media (min-width: 800px) {
   header {
     grid-template-columns: revert;
@@ -91,6 +112,17 @@ ul {
     grid-row: 2;
     justify-self: end;
     display: block;
+  }
+
+  .toggle-btn {
+    /* background: transparent;
+    border: none;
+    min-width: 44px;
+    min-height: 44px;
+    font-size: 1.1rem;
+    cursor: pointer; */
+
+    display: none; /* Skjul knappen som standard */
   }
 }
 
