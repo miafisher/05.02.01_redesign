@@ -1,3 +1,7 @@
+img {
+  max-width: 100%;
+}
+
 /* header (mobile first) */
 header {
   display: grid;
