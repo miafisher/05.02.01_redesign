@@ -161,7 +161,7 @@ h1 {
 }
 
 h2 {
-  font-family: "Courier New", Courier, monospace;
+  font-family: trajan-pro-3, serif;
   font-weight: 400;
   font-style: normal;
   font-size: 2rem;
@@ -171,7 +171,7 @@ h2 {
 }
 
 h3 {
-  font-family: "Courier New", Courier, monospace;
+  font-family: trajan-pro-3, serif;
   font-weight: 400;
   font-style: normal;
   font-size: 1.5rem;
@@ -181,7 +181,7 @@ h3 {
 }
 
 p {
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Avenir Book";
   font-weight: 400;
   font-style: normal;
   font-size: 1rem;
