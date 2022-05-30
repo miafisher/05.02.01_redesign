@@ -1,3 +1,8 @@
+/* Custom properties -DX */
+html {
+  --primary-color: #f0f0f0;
+}
+
 body {
   margin: 0;
 }
