@@ -5,10 +5,6 @@
   box-sizing: border-box;
 }
 
-img {
-  max-width: 100%;
-}
-
 main {
   max-width: 1200px;
   margin: 0 auto;
@@ -23,16 +19,16 @@ main {
   padding: 5%;
 }
 
-@media (orientation: portrait) and (max-width: 800px) {
-  .splash_img {
-    background-image: url(/billeder/cookies.jpg);
-    background-size: cover;
-    width: 100%;
-    height: auto;
-    aspect-ratio: 35/20;
-    margin: 0 auto;
-  }
+/* @media (orientation: portrait) and (max-width: 800px) { */
+.splash_img {
+  background-image: url(/billeder/cookies.jpg);
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 35/20;
+  margin: 0 auto;
 }
+/* } */
 /* .splash_img {
   background-image: url(/billeder/cookies.jpg);
   background-size: cover;
@@ -127,6 +123,88 @@ h3 {
   margin: 0% auto;
 }
 
+#container_4 {
+  background-color: white;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  padding: 5%;
+}
+
+/* nyhedsbrev styling */
+.newsletter {
+  display: grid;
+  grid-template-columns: 1fr;
+  background: rgb(220, 218, 218);
+  margin: 0 auto;
+  text-align: center;
+  max-width: 400px;
+  padding: 30px 30px;
+  border-radius: 5px;
+  color: rgb(124, 124, 124);
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+.newsletter h1 {
+  font-size: 2rem;
+  font-style: italic;
+  margin-top: 2px;
+  margin: 10px 0px 10px -10px;
+}
+.newsletter hr {
+  width: 125px;
+  height: 3px;
+  margin: 15px 110px;
+  border: 0;
+  background: rgb(124, 124, 124);
+}
+.newsletter input {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 65%;
+  height: 50px;
+  border: 0;
+  background: rgba(255, 255, 255, 0.5);
+  margin-bottom: 10px;
+  outline: none;
+  box-sizing: border-box;
+  font-size: 1.5rem;
+  text-align: center;
+}
+::placeholder {
+  color: rgb(124, 124, 124);
+}
+.newsletter button {
+  border: 3px solid rgba(255, 255, 255, 0.5);
+  height: 50px;
+  background-color: transparent;
+  color: rgb(124, 124, 124);
+  padding: 0px 28px;
+  cursor: pointer;
+  transition: 0.5s;
+  flex-shrink: 0;
+}
+.newsletter button:hover {
+  background-color: #282d46;
+  border-color: 00138e;
+}
+.wrap {
+  display: flex;
+}
+input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  background: #fff;
+  flex-shrink: 0;
+  margin-top: 4px;
+  margin-left: 0px;
+}
+.checkbox {
+  text-align: start;
+  display: flex;
+  gap: 0.7rem;
+  width: 325px;
+}
+
 @media (min-width: 800px) {
   #container_1 {
     height: 600px;
@@ -200,9 +278,94 @@ h3 {
     grid-row: 2;
   }
   .box_5 {
-    width: 400px;
+    width: 530px;
     height: 200px;
     grid-column: 2 / span 2;
     grid-row: 2;
+  }
+
+  #container_4 {
+    height: 600px;
+  }
+
+  .newsletter {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    background: rgb(220, 218, 218);
+    margin: 0 auto;
+    text-align: center;
+    max-width: 800px;
+    padding: 50px 30px;
+    /* border-radius: 5px; */
+    color: rgb(124, 124, 124);
+    margin-bottom: 200px;
+    margin-top: 100px;
+  }
+  .newsletter h1 {
+    margin-top: 10px;
+    font-size: 2.2rem;
+    font-style: italic;
+    margin-right: 10px;
+  }
+  .newsletter hr {
+    width: 90px;
+    height: 3px;
+    margin: 30px auto;
+    border: 0;
+    background: rgb(124, 124, 124);
+  }
+
+  .newsletter input {
+    border-radius: 0px;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 67%;
+    height: 50px;
+    border: 0;
+    background: rgba(255, 255, 255, 0.5);
+    margin-bottom: 10px;
+    outline: none;
+    box-sizing: border-box;
+    font-size: 1.5rem;
+    margin-top: 25px;
+    text-align: left;
+  }
+  ::placeholder {
+    color: rgb(124, 124, 124);
+  }
+  .newsletter button {
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    border-radius: 0px;
+    height: 50px;
+    background-color: transparent;
+    color: rgb(124, 124, 124);
+    padding: 0px 28px;
+    cursor: pointer;
+    transition: 0.5s;
+    flex-shrink: 0;
+    margin-top: 25px;
+  }
+  .newsletter button:hover {
+    background-color: #282d46;
+    border-color: 00138e;
+  }
+  .wrap {
+    display: flex;
+  }
+  input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    background: #fff;
+    flex-shrink: 0;
+    margin-top: 1px;
+    margin-left: -1px;
+  }
+  .checkbox {
+    text-align: start;
+    display: flex;
+    gap: 0.7rem;
+    width: 400px;
+  }
+  .checkbox label {
+    margin-left: -6px;
   }
 }

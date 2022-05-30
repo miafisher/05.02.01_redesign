@@ -1,8 +1,22 @@
+/* Custom properties -DX */
+html {
+  --primary-color: #f0f0f0;
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
 /* header (mobile first) */
 header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin: 2rem;
+  padding: 1rem 2rem 0rem 1rem;
+  background: #282d46;
   /* border: 1px solid black; */
 }
 
@@ -13,10 +27,9 @@ nav a {
   width: 100px;
   border-radius: 10px;
   text-align: center;
-  color: black;
+  color: white;
   font-family: "Times New Roman", Times, serif;
-  font-size: 15px;
-  font-weight: bold;
+  font-size: 1.1rem;
   text-decoration: none;
 }
 
@@ -38,6 +51,11 @@ nav a {
   color: white;
 }
 
+.knap {
+  border: none;
+  padding: 0;
+  background: none;
+}
 #flag {
   height: 51px;
   width: 51px;
@@ -53,21 +71,41 @@ nav {
 }
 
 ul {
-  /* display: flex; */
   list-style: none;
   margin: 0;
   padding: 0;
   padding-bottom: 0.4rem;
-  gap: 20px;
+  gap: 50px;
+}
+
+.toggle-btn {
+  display: block; /* Vis knappen, når viewporten maksimalt er 600px */
+}
+
+.main-menu {
+  display: contents; /* Fjern ".main-menu"-boksen fra ligningen, når viewporten maksimalt er 600px, men behold børnene, så disse deltager i flex-kontekten */
+}
+
+.main-menu ul {
+  display: none; /* Fjern menu-listen som standard */
+}
+
+.main-menu.shown ul {
+  /* Vis menu-listen, når klassen ".shown" er til stede */
+  border-top: 1px solid #000;
+  padding-top: 1rem;
+  display: flex;
+  flex: 1 1 100%;
+  flex-flow: column;
 }
 
 @media (min-width: 800px) {
   header {
     grid-template-columns: revert;
   }
-  ul {
+  /* ul {
     display: flex;
-  }
+  } */
 
   .logo {
     height: 100px;
@@ -88,6 +126,22 @@ ul {
     justify-self: end;
     display: block;
   }
+
+  .toggle-btn {
+    /* background: transparent;
+    border: none;
+    min-width: 44px;
+    min-height: 44px;
+    font-size: 1.1rem;
+    cursor: pointer; */
+
+    display: none; /* Skjul knappen som standard */
+  }
+
+  .main-menu ul {
+    display: flex;
+    justify-content: flex-end;
+  }
 }
 
 /* footer (mobile first) */
@@ -100,8 +154,9 @@ ul {
 } */
 
 /* typografi */
+
 h1 {
-  font-family: "Courier New", Courier, monospace;
+  font-family: trajan-pro-3, serif;
   font-weight: 400;
   font-style: normal;
   font-size: 3rem;
@@ -111,7 +166,7 @@ h1 {
 }
 
 h2 {
-  font-family: "Courier New", Courier, monospace;
+  font-family: trajan-pro-3, serif;
   font-weight: 400;
   font-style: normal;
   font-size: 2rem;
@@ -124,7 +179,7 @@ footer h2 {
 }
 
 h3 {
-  font-family: "Courier New", Courier, monospace;
+  font-family: trajan-pro-3, serif;
   font-weight: 400;
   font-style: normal;
   font-size: 1.5rem;
@@ -134,7 +189,7 @@ h3 {
 }
 
 p {
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Avenir Book";
   font-weight: 400;
   font-style: normal;
   font-size: 1rem;

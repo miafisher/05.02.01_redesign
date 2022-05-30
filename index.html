@@ -13,11 +13,13 @@
     <header>
       <div class="logo">
         <a href="index.html">
-          <img src="billeder/logo.png" alt="logo" />
+          <img src="logo/logo.svg" alt="logo" />
         </a>
       </div>
       <div class="sprog">FLAG</div>
-      <nav>
+
+      <nav class="main-menu">
+        <button class="toggle-btn">Menu</button>
         <ul>
           <li><a href="index.html">HOME</a></li>
           <li><a href="produkter.html">PRODUKTION</a></li>
@@ -59,13 +61,29 @@
           <a href="kontakt.html"><h3>KONTAKT</h3></a>
         </div>
 
-        <a href="omos.html">
-          <div class="box_5">
-             <a href="omos.html"><h3>OM OS</h3></a>
-            </div>
+        <div class="box_5">
+          <a href="omos.html"><h3>OM OS</h3></a>
+        </div>
       </div>
 
-      <div id="container_4"></div>
+      <div id="container_4">
+        <div class="newsletter">
+          <div>
+            <h1>Tilmeld dig vores nyhedsbrev</h1>
+            <hr />
+          </div>
+          <form>
+            <div class="wrap">
+              <input type="email" placeholder="E-mail" required />
+              <button type="submit">Tilmeld</button>
+            </div>
+            <div class="checkbox">
+              <input type="checkbox" id="conditions" />
+              <label for="conditions">Jeg accepterer vilkår og betingelser.</label>
+            </div>
+          </form>
+        </div>
+      </div>
     </main>
 
     <footer>INDSÆT FOOTER HER</footer>

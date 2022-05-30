@@ -7,16 +7,21 @@
     <title>Om os</title>
     <link rel="stylesheet" href="styles/generel.css" />
     <link rel="stylesheet" href="styles/omos.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/jgm1lxv.css" />
   </head>
   <body>
     <header>
       <div class="logo">
         <a href="index.html">
-          <img src="billeder/logo.png" alt="logo" />
+          <img src="logo/logo.svg" alt="logo" />
         </a>
       </div>
-      <div class="sprog">FLAG</div>
-      <nav>
+      <div class="sprog">
+        <button class="knap" onclick="myFunction()"><img id="flag" src="/billeder/danish.svg" src="usa.svg" /></button>
+      </div>
+
+      <nav class="main-menu">
+        <button class="toggle-btn">Menu</button>
         <ul>
           <li><a href="index.html">HOME</a></li>
           <li><a href="produkter.html">PRODUKTION</a></li>
@@ -31,8 +36,9 @@
         <div class="content">
           <div class="grid_1_2_1">
             <h1>Om os</h1>
-            <p>Vi byder dig stolt velkommen til TIMs cookies søde univers og bageri. TIMs cookies er et kulturelt styrket bageri med fokus på smag, kvalitet og kun de bedste råvarer.</p>
-            <p>TIM's cookies blev etableret i København en kold november morgen i 1985 af dansk-amerikaneren Tim Pape. Gennem de seneste 30 år har Tim sendt millioner af cookies, brownies, banankager og romkugler over disken. I sidste ende handler det om at dele TIMs passion og kærlighed til gode råvarer, ved at skabe den perfekte kombination af smag og kvalitet, så du altid kan få lidt til den søde tand.</p>
+            <p>Vi byder dig stolt velkommen til TIM's cookies søde univers. TIM's cookies er et kulturelt styrket bageri med fokus på smag, kvalitet og kun de bedste råvarer. TIM's cookies blev etableret i København en kold november morgen i 1985 af dansk-amerikaneren Tim Pape. Gennem de seneste 30 år har TIM's sendt millioner af cookies, brownies, banankager og romkugler over disken.</p>
+            <p>TIM's har mange eksklusive forhandlere rundt omkring i Danmark, bl.a. København, Odense, Århus og mange flere. Har man lyst til friskbagte lune kager, har man mulighed for selv at varme sin egne færdiglavede dejprodukter fra TIM's, herunder brunkagedej, vaniljekransedej, pebernøddej m.fl., eller har man lyst til lidt lækkert på farten, kan man også altid svinge forbi 7Eleven til en brownie.</p>
+            <p>I sidste ende handler det om at dele TIMs passion og kærlighed til gode råvarer, ved at skabe den perfekte kombination af smag og kvalitet, så du altid kan få lidt til den søde tand.</p>
             <p>Velkommen og velbekomme!</p>
             <p>Team TIMs cookies.</p>
           </div>
@@ -66,19 +72,19 @@
     <footer>
       <ul class="footer-links-main">
         <li><a href="#">Home</a></li>
-        <li><a href="#">Courses</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">About me</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#">Produkter</a></li>
+        <li><a href="#">Wholesale</a></li>
+        <li><a href="#">Kontakt</a></li>
+        <li><a href="#">Om os</a></li>
       </ul>
       <ul class="footer-links-cases">
-        <li><p>Temaer 2022</p></li>
-        <li><a href="#">Tema 1 - Introuge</a></li>
-        <li><a href="#">Tema 2 - Grundlæggende web </a></li>
-        <li><a href="#">Tema 3 - Grundlæggende UX </a></li>
-        <li><a href="#">Tema 4 - Animation</a></li>
-        <li><a href="#">Tema 5 - Grundlæggende indhold</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Twitter</a></li>
       </ul>
+      <img src="logo/logo.svg" alt="Tims Cookies logo" />
+      <div class="copyright">© 2022 TIMs COOKIES. All Rights Reserved</div>
     </footer>
+    <script src="javascript/animation.js"></script>
   </body>
 </html>
