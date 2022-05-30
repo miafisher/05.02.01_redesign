@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kontakt</title>
+    <link rel="stylesheet" href="styles/generel.css" />
     <link rel="stylesheet" href="styles/kontakt.css" />
-    <!-- <link rel="stylesheet" href="styles/generel.css" /> -->
   </head>
   <body>
     <header>
@@ -30,12 +30,11 @@
       <div id="tekst">
         <h1>Konktakt</h1>
         <p>Har du nogen spørgsmål?</p>
-        <p>Send os en mail.</p>
-        <p>info@timscookies.com</p>
-        <p>Landevej 119 Dk-2770</p>
+        <p>Send os en mail</p>
+        <p>i formularen nedenunder.</p>
+        <p>Amager Landevej 119 Dk-2770</p>
         <p>Kastrup Danmark</p>
         <p>+4535366760</p>
-        <hr />
       </div>
       <div id="galleri">
         <img src="/billeder/cookies.jpg" alt="cookies" />
@@ -45,26 +44,29 @@
         <img src="/billeder/cookies.jpg" alt="cookies" />
         <img src="/billeder/cookies.jpg" alt="cookies" />
       </div>
-      <form>
-        <div class="text-felt">
-          <div class="form-felt">
-            <label for="navn">Fulde navn</label>
-            <input type="text" id="navn" name="navn" required />
-          </div>
-
-          <div class="form-felt">
-            <label for="email">E-mail</label>
-            <input type="email" id="email" name="email" required />
-          </div>
-          <div class="form-felt">
-            <label>
-              Besked
-              <textarea name="besked" rows="5"></textarea>
-            </label>
-          </div>
-          <button type="submit">Indsend</button>
+      <section>
+        <div class="container">
+          <form action="">
+            <div class="form-group">
+              <label for="firstName">Fornavn</label>
+              <input type="text" id="firstName" name="FirstName" />
+            </div>
+            <div class="form-group">
+              <label for="lastName">Efternavn</label>
+              <input type="text" id="lastName" name="lastName" />
+            </div>
+            <!-- <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" />
+            </div> -->
+            <div class="form-group">
+              <label for="message">Besked</label>
+              <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            </div>
+            <button type="submit">Send</button>
+          </form>
         </div>
-      </form>
+      </section>
     </main>
     <footer>
       <div class="footer-container">
@@ -83,15 +85,10 @@
           </div>
           <div class="footer-heading footer-3">
             <h2>Sociale Medier</h2>
-            <a href="#">Instagram</a>
-            <a href="#">Facebook</a>
+            <a href="https://www.instagram.com/timsdanmark/">Instagram</a>
+            <a href="https://www.facebook.com/timscookie">Facebook</a>
             <a href="#">Youtube</a>
             <a href="#">Twitter</a>
-          </div>
-          <div class="footer-email-form">
-            <h2>Tilmeld dig vores nyhedsbrev</h2>
-            <input type="email" placeholder="Din E-mail" id="footer-email" />
-            <input type="submit " value="Sign Up" id="footer-email-btn" />
           </div>
         </div>
       </div>

@@ -1,5 +1,6 @@
 body {
   background-color: rgb(195, 154, 114);
+  background-color: antiquewhite;
 }
 p {
   color: white;
@@ -17,6 +18,7 @@ h1 {
 p {
   color: white;
 }
+
 img {
   width: 100%;
 }
@@ -31,64 +33,56 @@ select,
 button {
   display: block;
 }
-form {
-  display: grid;
-  gap: 2rem;
-}
-
-.form-felt {
-  display: grid;
-  gap: 3px;
-  text-align: center;
-  width: 20rem;
+section {
+  height: 100vh;
+  width: 100%;
+  display: flex;
   align-items: center;
-  margin: 2rem;
+  justify-content: center;
 }
-.text-felt {
-  display: grid;
-  grid-template-columns: 1fr;
-  background: rgb(220, 218, 218);
+.container {
+  width: 90%;
+  max-width: 500px;
   margin: 0 auto;
-  max-width: 800px;
-  padding: 3rem 1rem;
-  /* border-radius: 5px; */
-  color: rgb(124, 124, 124);
-  margin-bottom: 5rem;
-  margin-top: 2rem;
-  border: 1px solid rgb(206, 204, 204);
-  height: 24rem;
-  width: 44rem;
+  padding: 20px;
+  box-shadow: 0px 0px 20px #00000010;
+  background-color: white;
+  border-radius: 8px;
+  margin-bottom: 20px;
 }
-button {
-  width: 8rem;
-  height: 2rem;
-  margin-top: -1rem;
-  margin-left: 8rem;
-  cursor: pointer;
-  transition: 0.5s;
-  flex-shrink: 0;
+.form-group {
+  width: 100%;
+  margin-top: 20px;
+  font-size: 20px;
 }
-button:hover {
-  background-color: #282d46;
-  border-color: 00138e;
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 5px;
+  font-size: 18px;
+  border: 1px solid rgba(128, 128, 128, 0.199);
+  margin-top: 5px;
 }
 textarea {
-  width: 20rem;
+  resize: vertical;
 }
-/* }
- #navn {
-  width: 10rem;
+button[type="submit"] {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 20px;
+  font-size: 24px;
+  border-radius: 8px;
+  color: rgb(27, 166, 247);
+  text-align: center;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s ease background-color;
+}
+button[type="submit"]:hover {
+  background-color: rgb(214, 226, 236);
+}
 
-}
-#email { */
-label {
-  font-size: large;
-  font-style: italic;
-  text-align: left;
-}
-input {
-  background: rgba(255, 255, 255, 0.5);
-}
 * {
   padding: 0;
   margin: 0;
@@ -98,18 +92,19 @@ input {
 
 .footer-container {
   background-color: #212329;
-  padding-bottom: 4rem;
+  padding: 2rem 0 4rem 0;
 }
 
 .footer {
   width: 80%;
-  height: 40vh;
+  height: 20vh;
   background: #212329;
   color: rgb(255, 255, 255);
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   margin: 0 auto;
+  position: sticky;
 }
 .footer-heading {
   display: flex;
@@ -129,7 +124,7 @@ input {
   transition: 0.3s ease-out;
 }
 
-.footer-email-form h2 {
+#footer-email-form h2 {
   margin-bottom: 2rem;
 }
 #footer-email {
@@ -149,14 +144,37 @@ input {
   width: 100px;
   height: 40px;
   border-radius: 4px;
-  background: color #f9423d;
+  background-color: red;
+  color: white;
   outline: none;
   border: none;
-  color: white;
   font-size: 1rem;
+  text-align: center;
 }
 #footer-email-btn:hover {
   cursor: pointer;
-  background-color: #337af1;
+  background-color: rgb(6, 16, 155);
   transition: all 0.4s ease-out;
+}
+@media screen and (max-width: 1150px) {
+  .footer {
+    height: 50vh;
+  }
+  .footer-email-form {
+    margin-top: 4rem;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .footer {
+    padding-top: 2rem;
+  }
+}
+@media screen and (max-width: 720px) {
+  .footer-3 {
+    display: none;
+  }
+  .footer-email-form {
+    margin-top: 4rem;
+  }
 }
