@@ -36,20 +36,19 @@ h3 {
 
 .grid_1-1 {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 20px;
   background-color: #d1c9cc;
 }
 .col {
   display: grid;
-  flex-flow: column;
 }
-.col :last-child {
-  display: flex;
-  flex-direction: column;
+col :last-child {
+  display: grid;
+  grid-column: auto;
+
   margin-top: auto;
 }
-
 /* Video player */
 video {
   width: 100%;
