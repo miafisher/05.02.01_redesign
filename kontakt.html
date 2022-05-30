@@ -6,10 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kontakt</title>
     <link rel="stylesheet" href="styles/kontakt.css" />
-    <link rel="stylesheet" href="styles/generel.css" />
+    <!-- <link rel="stylesheet" href="styles/generel.css" /> -->
   </head>
   <body>
-    <header></header>
+    <header>
+      <div class="logo">
+        <a href="index.html">
+          <img src="billeder/logo.png" alt="logo" />
+        </a>
+      </div>
+      <div class="sprog">FLAG</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="produkter.html">PRODUKTION</a></li>
+          <li><a href="wholesale.html">WHOLESALE</a></li>
+          <li><a href="kontakt.html">KONTAKT</a></li>
+          <li><a href="omos.html">OM OS</a></li>
+        </ul>
+      </nav>
+    </header>
     <main>
       <div id="tekst">
         <h1>Konktakt</h1>
@@ -19,6 +35,7 @@
         <p>Landevej 119 Dk-2770</p>
         <p>Kastrup Danmark</p>
         <p>+4535366760</p>
+        <hr />
       </div>
       <div id="galleri">
         <img src="/billeder/cookies.jpg" alt="cookies" />
@@ -28,7 +45,56 @@
         <img src="/billeder/cookies.jpg" alt="cookies" />
         <img src="/billeder/cookies.jpg" alt="cookies" />
       </div>
+      <form>
+        <div class="text-felt">
+          <div class="form-felt">
+            <label for="navn">Fulde navn</label>
+            <input type="text" id="navn" name="navn" required />
+          </div>
+
+          <div class="form-felt">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-felt">
+            <label>
+              Besked
+              <textarea name="besked" rows="5"></textarea>
+            </label>
+          </div>
+          <button type="submit">Indsend</button>
+        </div>
+      </form>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="footer-container">
+        <div class="footer">
+          <div class="footer-heading footer-1">
+            <h2>Om os</h2>
+            <a href="#">Historie</a>
+            <a href="#">Råvare</a>
+            <a href="#">Trustpilot</a>
+            <a href="#">Certificeringer</a>
+          </div>
+          <div class="footer-heading footer-2">
+            <h2>Kontakt</h2>
+            <a href="#">Job</a>
+            <a href="#">Kundeservice</a>
+          </div>
+          <div class="footer-heading footer-3">
+            <h2>Sociale Medier</h2>
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+            <a href="#">Youtube</a>
+            <a href="#">Twitter</a>
+          </div>
+          <div class="footer-email-form">
+            <h2>Tilmeld dig vores nyhedsbrev</h2>
+            <input type="email" placeholder="Din E-mail" id="footer-email" />
+            <input type="submit " value="Sign Up" id="footer-email-btn" />
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
