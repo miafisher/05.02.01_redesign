@@ -1,4 +1,5 @@
-function myFunction() {
+/*function myFunction() {
+  console.log();
   var element = document.body;
   element.classList.toggle("flag-mode");
 
@@ -9,7 +10,7 @@ function myFunction() {
 
     document.getElementById("flag").src = "usa.svg";
   }
-}
+} */
 
 // burgermenu
 // Lav variablen "btn", der henviser til ".toggle-btn"
@@ -34,29 +35,34 @@ function toggleMenu() {
 }
 
 // Tilføj et klik-event til "btn", der sætter toggleMenu-funktionen i gang
-btn.addEventListener("click", toggleMenu);
+/*btn.addEventListener("click", toggleMenu);*/
 
 /* Video */
-/*
-const btn = document.querySelector(".video-player button");
+
+const vidContainer = document.querySelector(".video-player");
 const vid = document.querySelector(".video-player video");
+const button = document.querySelector(".video-player-button");
+vid.playbackRate = 6; // Debug only
 
-function pressPlay() {
-  if (vid.paused || vid.ended) {
+function togglePlay() {}
+function togglePlay() {
+  if (vid.paused) {
     vid.play();
-    vid.parentElement.classList.add("playing");
-    vid.controls = true;
+    vidContainer.classList.add("playing");
+    button.textContent = "Pause";
+  } else {
+    vid.pause();
+    button.textContent = "Play";
+    vidContainer.classList.remove("playing");
   }
 }
 
-function vidEnded() {
-  if (vid.parentElement.classList.contains("playing")) {
-    vid.parentElement.classList.remove("playing");
+function videoEnded() {
+  if (vidContainer.classList.contains("playing")) {
+    vidContainer.classList.remove("playing");
   }
-  vid.currentTime = 0;
-  vid.controls = false;
+  button.textContent = "Play";
 }
 
-btn.addEventListener("click", pressPlay);
-vid.addEventListener("ended", vidEnded);
-*/
+button.addEventListener("click", togglePlay);
+vid.addEventListener("ended", videoEnded);
