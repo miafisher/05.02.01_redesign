@@ -91,13 +91,13 @@ ul {
 }
 
 /* footer (mobile first) */
-footer {
+/* footer {
   position: sticky;
   background: #282d46;
   padding-block: 1rem;
   color: white;
   top: 100vh;
-}
+} */
 
 /* typografi */
 h1 {
@@ -118,6 +118,9 @@ h2 {
   line-height: 1.1;
   margin: 20px;
   color: black;
+}
+footer h2 {
+  margin: 0;
 }
 
 h3 {
