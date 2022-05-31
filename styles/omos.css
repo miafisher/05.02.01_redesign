@@ -43,7 +43,47 @@ p {
   padding: 11px;
   max-width: 60ch;
 }
+body {
+  margin: 0;
+}
 .gallery {
+  --gap: 16px;
+  --num-cols: 4;
+  --row-height: 300px;
+
+  box-sizing: border-box;
+  padding: (var(--gap));
+
+  display: grid;
+  grid-template-columns: repeat(var(--num-cols), 1fr);
+  grid-auto-rows: var(--row-height);
+  gap: var(--gap);
+}
+.gallery {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.gallery > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.gallery-col-2 {
+  grid-column: span 2;
+}
+.gallery-row-2 {
+  grid-row: span 2;
+}
+
+/* alt under 1024px */
+@media screen and (max-width: 1024px) {
+  .gallery {
+    --num-cols: 2;
+    --row-height: 200px;
+    margin-bottom: 120px;
+  }
+}
+/* .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   align-self: center;
@@ -56,43 +96,10 @@ p {
   max-width: 100%;
   object-fit: cover;
 }
-/* footer */
-footer {
-  /* padding: 40px 40px; */
+article {
   background-color: #282d46;
-  margin-top: 20px;
-  overflow: hidden;
-}
-footer ul {
-  width: fit-content;
-  float: left;
-  padding-left: 20px;
-}
-footer ul li {
-  display: block;
-  list-style: none;
-}
-footer ul li a {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1rem;
-  list-style: none;
-  color: #fff;
-  line-height: 30px;
-  text-decoration: none;
-}
-.footer-links-cases {
-  float: right;
-  padding-right: 20px;
-  padding-top: 85px;
-}
-.copyright {
-  color: white;
-  text-align: center;
-}
-footer img {
-  max-width: 10%;
-  margin-left: 370px;
-}
+  padding: 5rem;
+} */
 /* .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -111,6 +118,7 @@ footer img {
   /* border-radius: 5px; */
   color: rgb(124, 124, 124);
   margin-bottom: 120px;
+  margin-top: 120px;
 }
 .newsletter h1 {
   font-family: "Times New Roman", Times, serif;
@@ -118,6 +126,7 @@ footer img {
   font-size: 2rem;
   font-style: italic;
   margin-right: 10px;
+  color: rgb(95, 94, 94);
 }
 .newsletter hr {
   width: 90px;
@@ -276,12 +285,12 @@ input[type="checkbox"] {
     line-height: 25px;
     padding: 11px;
   }
-  .gallery {
+  /* .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     align-self: center;
     gap: 40px;
     margin-top: 120px;
     margin-bottom: 120px;
-  }
+  } */
 }
