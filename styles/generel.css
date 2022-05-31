@@ -70,7 +70,7 @@ nav {
   display: none;
 }
 
-ul {
+header ul {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -175,11 +175,11 @@ h2 {
   margin: 20px;
   color: black;
 }
-footer h2 {
+/* footer h2 {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   color: white;
-}
+} */
 
 h3 {
   font-family: trajan-pro-3, serif;
@@ -200,7 +200,8 @@ p {
   margin: 20px;
   color: black;
 }
-.footer-container {
+/* williams footer */
+/* .footer-container {
   background-color: #212329;
   padding: 2rem 0 4rem 0;
 }
@@ -288,4 +289,70 @@ p {
   .footer-email-form {
     margin-top: 4rem;
   }
+} */
+/* idas nye footer */
+.footer-container {
+  max-width: 1170px;
+  background-color: "#282d46";
+  margin: auto;
+}
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+footer ul {
+  list-style: none;
+  width: fit-content;
+  padding: 0px;
+}
+.footer {
+  background-color: #282d46;
+  padding: 60px 30px 10px 20px;
+}
+
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+.footer-col h4 {
+  font-size: 1rem;
+  color: #ffffff;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #c49b72;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col ul li {
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+.footer-col ul li a {
+  font-size: 1rem;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #ffffff;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover {
+  color: #c49b72;
+  padding-left: 10px;
+}
+
+.copyright {
+  color: white;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 0px;
 }
