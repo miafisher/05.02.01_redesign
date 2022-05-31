@@ -34,21 +34,25 @@ h3 {
   color: black;
 }
 
-.grid_1-1 {
-  display: grid;
+.content {
+  display: flex;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
   background-color: #d1c9cc;
 }
 .col {
-  display: grid;
+  display: flex;
 }
 col :last-child {
-  display: grid;
-  grid-column: auto;
-
+  display: flex;
+  flex-flow: column;
   margin-top: auto;
 }
+.forhandlere {
+  position: relative;
+  top: 4rem;
+}
+
 /* Video player */
 video {
   width: 100%;
@@ -69,4 +73,48 @@ video {
   padding: 0.5rem 1rem;
   cursor: pointer;
   transition: 0.3s;
+}
+
+@media (max-width: 800px) {
+  .content {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .forhandlere {
+    position: relative;
+    top: 8rem;
+  }
+  .video-player-button {
+    background: #d1c1bf;
+    color: #000;
+    border: none;
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: 0.075rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+}
+
+@media (max-width: 1100px) {
+  .content {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .forhandlere {
+    position: relative;
+    top: 2rem;
+  }
+  .video-player-button {
+    background: #d1c1bf;
+    color: #000;
+    border: none;
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: 0.075rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+  }
 }
