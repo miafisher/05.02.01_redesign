@@ -34,18 +34,39 @@ h3 {
   color: black;
 }
 
-.grid_1-1-1 {
+.grid_1-1 {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 20px;
   background-color: #d1c9cc;
 }
-.flex-col {
-  display: flex;
-  flex-flow: column;
+.col {
+  display: grid;
 }
-.flex-col :last-child {
-  display: flex;
-  flex-direction: column;
+col :last-child {
+  display: grid;
+  grid-column: auto;
+
   margin-top: auto;
+}
+/* Video player */
+video {
+  width: 100%;
+  display: block;
+}
+
+.video-player {
+  opacity: 1;
+}
+
+.video-player-button {
+  background: #d1c1bf;
+  color: #000;
+  border: none;
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.075rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: 0.3s;
 }
