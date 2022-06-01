@@ -57,10 +57,8 @@ img {
   gap: 1rem;
 }
 
-.gif {
-  grid-column: 2;
-  width: 100%;
-  height: auto;
+.video {
+  grid-column: 1 / span 2;
 }
 .col {
   text-align: center;
