@@ -28,7 +28,7 @@ nav a {
   border-radius: 10px;
   text-align: center;
   color: white;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1.1rem;
   text-decoration: none;
 }
@@ -38,7 +38,7 @@ nav a {
   width: 50px;
   grid-column: 2;
   grid-row: 1;
-  /* justify-self: center; */
+  justify-self: center;
 }
 
 .sprog {
@@ -79,7 +79,8 @@ header ul {
 }
 
 .toggle-btn {
-  display: block; /* Vis knappen, når viewporten maksimalt er 600px */
+  display: block; /* Vis knappen, når viewporten maksimalt er 800px */
+  cursor: pointer;
 }
 
 .main-menu {
@@ -97,6 +98,9 @@ header ul {
   display: flex;
   flex: 1 1 100%;
   flex-flow: column;
+}
+header ul li a:hover {
+  color: #c49b72;
 }
 
 @media (min-width: 800px) {
@@ -315,7 +319,8 @@ footer ul {
   padding: 0 15px;
 }
 .footer-col h4 {
-  font-size: 1rem;
+  font-family: trajan-pro-3, serif;
+  font-size: 1.2rem;
   color: #ffffff;
   margin-bottom: 35px;
   font-weight: 500;
@@ -329,9 +334,10 @@ footer ul {
   background-color: #c49b72;
   height: 2px;
   box-sizing: border-box;
-  width: 50px;
+  width: 75px;
 }
 .footer-col ul li {
+  font-family: "Open Sans", sans-serif;
   margin-bottom: 10px;
   color: #ffffff;
 }
@@ -355,4 +361,31 @@ footer ul {
   text-align: center;
   margin-top: 50px;
   margin-bottom: 0px;
+}
+img.footer-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 20%;
+}
+@media screen and (max-width: 600px) {
+  .footer-col ul li {
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+  }
+  .footer-col ul li a {
+    font-size: 0.8rem;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  .copyright {
+    color: white;
+    text-align: center;
+    font-size: 0.6rem;
+    margin-top: 50px;
+    margin-bottom: 0px;
+  }
 }

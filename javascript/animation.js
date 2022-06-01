@@ -17,6 +17,7 @@
 const btn = document.querySelector(".toggle-btn");
 // Lav variablen "menu", der henviser til ".main-menu"
 const menu = document.querySelector(".main-menu");
+const menuimg = btn.querySelector("img");
 // Lav funktionen "toggleMenu()" med følgende funktionalitet
 function toggleMenu() {
   // a) toggle klassen "shown" på menu vha. classList.toggle
@@ -26,10 +27,10 @@ function toggleMenu() {
   // c) spørg om "menuShown" i if-sætningen nedenfor (=> if (menuShown)), og udskift teksten
   if (menuShown) {
     console.log(menuShown); // se i konsollen
-    btn.textContent = "Luk"; // sæt btn.textContent til "Luk", hvis menuShown er "true"
+    menuimg.src = "billeder/luk.svg"; // sæt btn.textContent til "Luk", hvis menuShown er "true"
   } else {
     console.log(menuShown); // se i konsollen
-    btn.textContent = "Menu"; // sæt btn.textContent til "Menu", hvis menuShown er "false"
+    menuimg.src = "billeder/burgermenu.svg"; // sæt btn.textContent til "Menu", hvis menuShown er "false"
   }
   // "toggleMenu()" slutter her
 }
@@ -42,7 +43,7 @@ btn.addEventListener("click", toggleMenu);
 const vidContainer = document.querySelector(".video-player");
 const vid = document.querySelector(".video-player video");
 const button = document.querySelector(".video-player-button");
-vid.playbackRate = 6; // Debug only
+vid.playbackRate = 1; // Debug only
 
 function togglePlay() {}
 function togglePlay() {
