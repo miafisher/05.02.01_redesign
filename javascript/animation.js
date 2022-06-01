@@ -43,7 +43,7 @@ btn.addEventListener("click", toggleMenu);
 const vidContainer = document.querySelector(".video-player");
 const vid = document.querySelector(".video-player video");
 const button = document.querySelector(".video-player-button");
-vid.playbackRate = 6; // Debug only
+vid.playbackRate = 1; // Debug only
 
 function togglePlay() {}
 function togglePlay() {
