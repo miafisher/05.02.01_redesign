@@ -124,7 +124,7 @@ article {
   font-size: 2rem;
   font-style: italic;
   margin-right: 10px;
-  color: rgb(95, 94, 94);
+  color: rgb(77, 77, 77);
 }
 .newsletter hr {
   width: 90px;
@@ -157,7 +157,7 @@ article {
   border-radius: 0px;
   height: 50px;
   background-color: transparent;
-  color: rgb(124, 124, 124);
+  color: rgb(77, 77, 77);
   padding: 0px 28px;
   cursor: pointer;
   transition: 0.5s;
@@ -184,6 +184,7 @@ input[type="checkbox"] {
   display: flex;
   gap: 0.7rem;
   width: 400px;
+  color: rgb(77, 77, 77);
 }
 .checkbox label {
   margin-left: -6px;
