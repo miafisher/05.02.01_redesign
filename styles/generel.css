@@ -99,6 +99,9 @@ header ul {
   flex: 1 1 100%;
   flex-flow: column;
 }
+header ul li a:hover {
+  color: #c49b72;
+}
 
 @media (min-width: 800px) {
   header {
