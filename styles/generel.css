@@ -38,7 +38,7 @@ nav a {
   width: 50px;
   grid-column: 2;
   grid-row: 1;
-  /* justify-self: center; */
+  justify-self: center;
 }
 
 .sprog {
@@ -79,7 +79,8 @@ header ul {
 }
 
 .toggle-btn {
-  display: block; /* Vis knappen, når viewporten maksimalt er 600px */
+  display: block; /* Vis knappen, når viewporten maksimalt er 800px */
+  cursor: pointer;
 }
 
 .main-menu {
