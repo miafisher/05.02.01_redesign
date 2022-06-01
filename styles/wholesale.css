@@ -57,6 +57,7 @@ col :last-child {
 video {
   width: 100%;
   display: block;
+  position: relative;
 }
 
 .video-player {
@@ -64,15 +65,24 @@ video {
 }
 
 .video-player-button {
-  background: #d1c1bf;
-  color: #000;
-  border: none;
-  font-size: 1.25rem;
-  font-weight: 700;
-  letter-spacing: 0.075rem;
-  padding: 0.5rem 1rem;
+  align-items: center;
+  background-color: #fee6e3;
+  border: 2px solid #111;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #111;
   cursor: pointer;
-  transition: 0.3s;
+  display: flex;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  height: 48px;
+  justify-content: center;
+  line-height: 24px;
+  max-width: 100%;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  touch-action: manipulation;
 }
 
 @media (max-width: 800px) {
@@ -84,16 +94,30 @@ video {
     position: relative;
     top: 8rem;
   }
+  .video {
+    width: 100%;
+    display: block;
+    position: relative;
+  }
   .video-player-button {
-    background: #d1c1bf;
-    color: #000;
-    border: none;
-    font-size: 1.25rem;
-    font-weight: 700;
-    letter-spacing: 0.075rem;
-    padding: 0.5rem 1rem;
+    align-items: center;
+    background-color: #fee6e3;
+    border: 2px solid #111;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #111;
     cursor: pointer;
-    transition: 0.3s;
+    display: flex;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    height: 48px;
+    justify-content: center;
+    line-height: 24px;
+    max-width: 100%;
+    padding: 0 25px;
+    position: relative;
+    text-align: center;
+    touch-action: manipulation;
   }
 }
 
@@ -102,19 +126,33 @@ video {
     display: grid;
     grid-template-columns: 1fr;
   }
+  .video {
+    width: 100%;
+    display: block;
+    position: relative;
+  }
   .forhandlere {
     position: relative;
     top: 2rem;
   }
   .video-player-button {
-    background: #d1c1bf;
-    color: #000;
-    border: none;
-    font-size: 1.25rem;
-    font-weight: 700;
-    letter-spacing: 0.075rem;
-    padding: 0.5rem 1rem;
+    align-items: center;
+    background-color: #fee6e3;
+    border: 2px solid #111;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #111;
     cursor: pointer;
-    transition: 0.3s;
+    display: flex;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    height: 48px;
+    justify-content: center;
+    line-height: 24px;
+    max-width: 100%;
+    padding: 0 25px;
+    position: relative;
+    text-align: center;
+    touch-action: manipulation;
   }
 }
