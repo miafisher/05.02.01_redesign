@@ -49,7 +49,7 @@ body {
   --row-height: 300px;
 
   box-sizing: border-box;
-  padding: (var(--gap));
+  padding: var(--gap);
 
   display: grid;
   grid-template-columns: repeat(var(--num-cols), 1fr);
@@ -166,7 +166,7 @@ article {
 }
 .newsletter button:hover {
   background-color: #282d46;
-  border-color: 00138e;
+  /* border-color: #00138e; */
 }
 .wrap {
   display: flex;
@@ -242,7 +242,6 @@ input[type="checkbox"] {
   }
   .newsletter button:hover {
     background-color: #282d46;
-    border-color: 00138e;
   }
   .wrap {
     display: flex;
