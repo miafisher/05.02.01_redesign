@@ -160,6 +160,8 @@ input[type="checkbox"] {
 .checkbox label {
   margin-left: -6px;
 }
+
+/* nyhedsbrev mediaqueries mobil version */
 @media (max-width: 800px) {
   .newsletter {
     display: grid;
