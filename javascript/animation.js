@@ -53,7 +53,6 @@ function togglePlay() {
     vid.play();
 
     playbutton.style.display = "none";
-    pausebutton.style.display = "inline-block";
 
     vidContainer.classList.add("playing");
     playbutton.imgContent = "billeder/play.svg";
@@ -61,7 +60,6 @@ function togglePlay() {
     vid.pause();
 
     playbutton.style.display = "inline-block";
-    pausebutton.style.display = "none";
 
     pausebutton.imgContent = "billeder/pause.svg";
     vidContainer.classList.remove("playing");
@@ -73,10 +71,8 @@ function videoEnded() {
     vidContainer.classList.remove("playing");
   }
   playbutton.style.display = "inline-block";
-  pausebutton.style.display = "none";
   playbutton.imgContent = "billeder/play.svg";
 }
 
 playbutton.addEventListener("click", togglePlay);
-pausebutton.addEventListener("click", togglePlay);
 vid.addEventListener("ended", videoEnded);
