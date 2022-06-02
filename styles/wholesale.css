@@ -1,3 +1,7 @@
+html {
+  background-color: var(--blue-color);
+}
+
 img {
   max-width: 100%;
 }
@@ -50,7 +54,7 @@ col :last-child {
 }
 .forhandlere {
   position: relative;
-  top: 4rem;
+  top: 5rem;
 }
 
 /* Video player */
@@ -64,17 +68,13 @@ video {
   opacity: 1;
 }
 
-.video-player-button {
+.play-button {
   align-items: center;
-  background-color: #fee6e3;
-  border: 2px solid #111;
   border-radius: 8px;
   box-sizing: border-box;
   color: #111;
   cursor: pointer;
   display: flex;
-  font-family: Inter, sans-serif;
-  font-size: 16px;
   height: 48px;
   justify-content: center;
   line-height: 24px;
@@ -83,6 +83,11 @@ video {
   position: relative;
   text-align: center;
   touch-action: manipulation;
+  position: absolute;
+  top: 50%;
+  left: 78%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
 }
 
 @media (max-width: 800px) {
@@ -99,17 +104,13 @@ video {
     display: block;
     position: relative;
   }
-  .video-player-button {
+  .play-button {
     align-items: center;
-    background-color: #fee6e3;
-    border: 2px solid #111;
     border-radius: 8px;
     box-sizing: border-box;
     color: #111;
     cursor: pointer;
     display: flex;
-    font-family: Inter, sans-serif;
-    font-size: 16px;
     height: 48px;
     justify-content: center;
     line-height: 24px;
@@ -118,6 +119,11 @@ video {
     position: relative;
     text-align: center;
     touch-action: manipulation;
+    position: absolute;
+    top: 50%;
+    left: 78%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
   }
 }
 
@@ -135,17 +141,13 @@ video {
     position: relative;
     top: 2rem;
   }
-  .video-player-button {
+  .play-button {
     align-items: center;
-    background-color: #fee6e3;
-    border: 2px solid #111;
     border-radius: 8px;
     box-sizing: border-box;
     color: #111;
     cursor: pointer;
     display: flex;
-    font-family: Inter, sans-serif;
-    font-size: 16px;
     height: 48px;
     justify-content: center;
     line-height: 24px;
@@ -154,5 +156,10 @@ video {
     position: relative;
     text-align: center;
     touch-action: manipulation;
+    position: absolute;
+    top: 102%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
   }
 }
