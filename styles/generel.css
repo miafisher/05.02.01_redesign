@@ -88,6 +88,7 @@ header ul {
 .toggle-btn {
   display: block; /* Vis knappen, når viewporten maksimalt er 800px */
   cursor: pointer;
+  all: unset;
 }
 
 .main-menu {
@@ -123,7 +124,7 @@ header ul li a:hover {
     width: 100px;
     grid-column: 1;
     grid-row: 1 / span 2;
-    justify-self: center;
+    justify-self: start;
   }
 
   .sprog {
