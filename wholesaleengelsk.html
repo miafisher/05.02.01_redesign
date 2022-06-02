@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="danish">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -20,58 +20,77 @@
       <div class="sprog">
         <a href="wholesale.html"><img src="usa.svg" /></a>
       </div>
-      <nav>
+      <nav class="main-menu">
+        <button class="toggle-btn">Menu</button>
         <ul>
           <li><a href="index.html">HOME</a></li>
-          <li><a href="produkter.html">PRODUKTION</a></li>
+          <li><a href="produkter.html">PRODUCTS</a></li>
           <li><a href="wholesale.html">WHOLESALE</a></li>
-          <li><a href="kontakt.html">KONTAKT</a></li>
-          <li><a href="omos.html">OM OS</a></li>
+          <li><a href="kontakt.html">CONTACT</a></li>
+          <li><a href="omos.html">ABOUT</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <div id="container_1">
-        <h2>Wholesale</h2>
-      </div>
+      <div class="content">
+        <div class="flex-col">
+          <h2>Wholesale</h2>
 
-      <div class="grid_1-1">
-        <div class="col">
           <p>Ønsker du at bliver forhandler af TIMs Exclusive Romkugler så kontakt Sprit & Co på <a href="mailto:info@sprit-co.dk">info@sprit-co.dk</a> eller Tel.: (+45) 32 11 46 38 – se mere på <a href="http://www.sprit-co.dk">www.sprit-co.dk</a></p>
+          <div class="forhandlere">
+            <h2>Partners</h2>
+            <h3>MAGASIN, MAD & VIN</h3>
+            <h3>Vinspecialisten Lyngby</h3>
+            <h3>Butler Vin</h3>
+            <h3>Allerød Vinhandel</h3>
+            <h3>And Many more</h3>
+          </div>
         </div>
-        <div class="col"></div>
+
+        <div class="flex-col"></div>
 
         <figure class="video-player">
-          <video muted src="https://video.wixstatic.com/video/a89be2_bc3d95d4f77e48bdb7bd2a21991306fe/1080p/mp4/file.mp4"></video>
+          <video muted src="https://video.wixstatic.com/video/a89be2_bc3d95d4f77e48bdb7bd2a21991306fe/1080p/mp4/file.mp4" poster="billeder/thumbnail.png"></video>
           <button class="video-player-button">Play</button>
         </figure>
       </div>
     </main>
-    <footer>
+    <footer class="footer">
       <div class="footer-container">
-        <div class="footer">
-          <div class="footer-heading footer-1">
-            <h2>Om os</h2>
-            <a href="#">Historie</a>
-            <a href="#">Råvare</a>
-            <a href="#">Trustpilot</a>
-            <a href="#">Certificeringer</a>
+        <div class="footer-row">
+          <div class="footer-col">
+            <h4>Tim's Cookies</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">Wholesale</a></li>
+              <li><a href="#">Contact us</a></li>
+              <li><a href="#">About</a></li>
+            </ul>
           </div>
-          <div class="footer-heading footer-2">
-            <h2>Kontakt</h2>
-            <a href="#">Job</a>
-            <a href="#">Kundeservice</a>
+          <div class="footer-col">
+            <h4>Follow us</h4>
+            <ul>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Twitter</a></li>
+            </ul>
           </div>
-          <div class="footer-heading footer-3">
-            <h2>Sociale Medier</h2>
-            <a href="https://www.instagram.com/timsdanmark/">Instagram</a>
-            <a href="https://www.facebook.com/timscookie">Facebook</a>
-            <a href="#">Youtube</a>
-            <a href="#">Twitter</a>
+          <div class="footer-col">
+            <h4>Contact us</h4>
+            <ul>
+              <li>Amager Landevej 119</li>
+              <li>2770 Kastrup</li>
+              <li>Denmark</li>
+              <li>+45 35 36 67 60</li>
+              <li>info@timscookies.com</li>
+            </ul>
           </div>
         </div>
       </div>
+      <section class="copyright">© 2022 TIMs COOKIES. All Rights Reserved</section>
     </footer>
+
     <script src="javascript/animation.js"></script>
   </body>
 </html>

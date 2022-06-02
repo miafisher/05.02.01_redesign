@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Om os</title>
+    <link rel="icon" type="image/svg+xml" href="logo/nyt_logo.png" />
     <link rel="stylesheet" href="styles/generel.css" />
     <link rel="stylesheet" href="styles/omos.css" />
     <link rel="stylesheet" href="https://use.typekit.net/jgm1lxv.css" />
@@ -13,18 +14,17 @@
     <header>
       <div class="logo">
         <a href="index.html">
-          <img src="logo/logo.svg" alt="logo" />
+          <img src="logo/nyt_logo.png" alt="logo" />
         </a>
       </div>
       <div class="sprog">
-        <a href="about.html"><img src="billeder/danish.svg" /></a>
+        <a href="about.html"><img src="billeder/danish.svg" alt="dansk flag" /></a>
       </div>
 
       <nav class="main-menu">
-        <button class="toggle-btn">Menu</button>
+        <button class="toggle-btn"><img src="billeder/burgermenu.svg" alt="Menu" /></button>
         <ul>
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="produkter.html">PRODUKTION</a></li>
+          <li><a href="produkter.html">PRODUKTER</a></li>
           <li><a href="wholesale.html">WHOLESALE</a></li>
           <li><a href="kontakt.html">KONTAKT</a></li>
           <li><a href="omos.html">OM OS</a></li>
@@ -70,32 +70,43 @@
         </form>
       </div>
     </main>
-    <footer>
-      <div class="grid-footer">
-        <ul class="footer-links-address">
-          <li>Tims Cookies</li>
-          <li>Amager Landevej 119</li>
-          <li>2770 Kastrup</li>
-          <li>Denmark</li>
-          <li>+45 35 36 67 60</li>
-          <li>info@timscookies.com</li>
-        </ul>
-        <img class="logo-footer" src="logo/logo.svg" alt="Tims Cookies logo" />
-        <ul class="footer-links-main">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Produkter</a></li>
-          <li><a href="#">Wholesale</a></li>
-          <li><a href="#">Kontakt</a></li>
-          <li><a href="#">Om os</a></li>
-        </ul>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-row">
+          <div class="footer-col">
+            <h4>Tim's Cookies</h4>
+            <ul>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="produkter.html">PRODUKTER</a></li>
+              <li><a href="wholesale.html">WHOLESALE</a></li>
+              <li><a href="kontakt.html">KONTAKT</a></li>
+              <li><a href="omos.html">OM OS</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Sociale medier</h4>
+            <ul>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Twitter</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Kontakt os</h4>
+            <ul>
+              <li>Amager Landevej 119</li>
+              <li>2770 Kastrup</li>
+              <li>Denmark</li>
+              <li>+45 35 36 67 60</li>
+              <li>info@timscookies.com</li>
+            </ul>
+          </div>
+          <!-- <img class="footer-logo" src="logo/logo.svg" alt="logo" /> -->
+        </div>
       </div>
-      <ul class="footer-links-cases">
-        <li class="item1"><a href="#">Facebook</a></li>
-        <li class="item2"><a href="#">Instagram</a></li>
-        <li class="item3"><a href="#">Twitter</a></li>
-      </ul>
-      <div class="copyright">© 2022 TIMs COOKIES. All Rights Reserved</div>
+      <section class="copyright">© 2022 TIMs COOKIES. All Rights Reserved</section>
     </footer>
+    <script src="javascript/login.js"></script>
     <script src="javascript/animation.js"></script>
   </body>
 </html>
