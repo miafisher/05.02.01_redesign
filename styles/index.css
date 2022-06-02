@@ -21,7 +21,7 @@ main {
 
 /* @media (orientation: portrait) and (max-width: 800px) { */
 .splash_img {
-  background-image: url(/billeder/coookies.webp);
+  background-image: url(../billeder/coookies.webp);
   background-size: cover;
   width: 100%;
   height: auto;
