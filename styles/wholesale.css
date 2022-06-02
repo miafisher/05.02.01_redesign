@@ -50,40 +50,18 @@ col :last-child {
 }
 .forhandlere {
   position: relative;
-  top: 5rem;
+  top: 4rem;
+  margin-bottom: 25%;
 }
 
 /* Video player */
 video {
   width: 100%;
-  display: block;
   position: relative;
 }
 
 .video-player {
   opacity: 1;
-}
-
-.play-button {
-  align-items: center;
-  border-radius: 8px;
-  box-sizing: border-box;
-  color: #111;
-  cursor: pointer;
-  display: flex;
-  height: 48px;
-  justify-content: center;
-  line-height: 24px;
-  max-width: 100%;
-  padding: 0 25px;
-  position: relative;
-  text-align: center;
-  touch-action: manipulation;
-  position: absolute;
-  top: 50%;
-  left: 78%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
 }
 
 @media (max-width: 500px) {
@@ -99,27 +77,7 @@ video {
   .forhandlere {
     position: relative;
     top: 2rem;
-  }
-  .play-button {
-    align-items: center;
-    border-radius: 8px;
-    box-sizing: border-box;
-    color: #111;
-    cursor: pointer;
-    display: flex;
-    height: 48px;
-    justify-content: center;
-    line-height: 24px;
-    max-width: 100%;
-    padding: 0 25px;
-    position: relative;
-    text-align: center;
-    touch-action: manipulation;
-    position: absolute;
-    top: 96%;
-    left: 51%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
+    margin-bottom: 25%;
   }
 }
 
@@ -130,32 +88,12 @@ video {
   }
   .forhandlere {
     position: relative;
-    top: 4rem;
+    top: 7rem;
+    margin-bottom: 25%;
   }
   .video {
     width: 100%;
     display: block;
     position: relative;
-  }
-  .play-button {
-    align-items: center;
-    border-radius: 8px;
-    box-sizing: border-box;
-    color: #111;
-    cursor: pointer;
-    display: flex;
-    height: 48px;
-    justify-content: center;
-    line-height: 24px;
-    max-width: 100%;
-    padding: 0 25px;
-    position: relative;
-    text-align: center;
-    touch-action: manipulation;
-    position: absolute;
-    top: 97%;
-    left: 52%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
   }
 }
