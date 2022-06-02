@@ -1,6 +1,8 @@
 /* Custom properties -DX */
 html {
   --primary-color: #f0f0f0;
+  --blue-color: #282d46;
+  --cookie-color: #c49b72;
 }
 
 body {
@@ -16,7 +18,7 @@ header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   padding: 1rem 2rem 0rem 1rem;
-  background: #282d46;
+  background: var(--blue-color);
   /* border: 1px solid black; */
 }
 
@@ -39,6 +41,11 @@ nav a {
   grid-column: 2;
   grid-row: 1;
   justify-self: center;
+}
+
+.logo img {
+  height: auto;
+  width: 100%;
 }
 
 .sprog {
@@ -100,7 +107,7 @@ header ul {
   flex-flow: column;
 }
 header ul li a:hover {
-  color: #c49b72;
+  color: var(--cookie-color);
 }
 
 @media (min-width: 800px) {
@@ -297,7 +304,7 @@ p {
 /* idas nye footer */
 .footer-container {
   max-width: 1170px;
-  background-color: "#282d46";
+  background-color: var(--blue-color);
   margin: auto;
 }
 .footer-row {
@@ -310,7 +317,7 @@ footer ul {
   padding: 0px;
 }
 .footer {
-  background-color: #282d46;
+  background-color: var(--blue-color);
   padding: 60px 30px 10px 20px;
 }
 
@@ -331,7 +338,7 @@ footer ul {
   position: absolute;
   left: 0;
   bottom: -10px;
-  background-color: #c49b72;
+  background-color: var(--cookie-color);
   height: 2px;
   box-sizing: border-box;
   width: 75px;
@@ -352,7 +359,7 @@ footer ul {
   transition: all 0.3s ease;
 }
 .footer-col ul li a:hover {
-  color: #c49b72;
+  color: var(--cookie-color);
   padding-left: 10px;
 }
 
