@@ -1,17 +1,3 @@
-/*function myFunction() {
-  console.log();
-  var element = document.body;
-  element.classList.toggle("flag-mode");
-
-  if (document.getElementById("flag").src == "danish.svg") {
-    document.getElementById("flag").src = "danish.svg";
-  } else {
-    document.getElementById("flag").src = "usa.svg";
-
-    document.getElementById("flag").src = "usa.svg";
-  }
-} */
-
 // burgermenu
 // Lav variablen "btn", der henviser til ".toggle-btn"
 const btn = document.querySelector(".toggle-btn");
