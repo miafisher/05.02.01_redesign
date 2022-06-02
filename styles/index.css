@@ -21,7 +21,7 @@ main {
 
 /* @media (orientation: portrait) and (max-width: 800px) { */
 .splash_img {
-  background-image: url(billeder/coookies.webp);
+  background-image: url(/billeder/coookies.webp);
   background-size: cover;
   width: 100%;
   height: auto;
@@ -72,25 +72,25 @@ h3 {
 }
 
 .box_img1 {
-  background: url(billeder/img_1.webp);
+  background: url(/billeder/img_1.webp);
   background-size: cover;
   background-position: 50%;
 }
 
 .box_img2 {
-  background: url(billeder/img_2.webp);
+  background: url(/billeder/img_2.webp);
   background-size: cover;
   background-position: 50%;
 }
 
 .box_img3 {
-  background: url(billeder/img_3.webp);
+  background: url(/billeder/img_3.webp);
   background-size: cover;
   background-position: 50%;
 }
 
 .box_img4 {
-  background: url(billeder/img_4.webp);
+  background: url(/billeder/img_4.webp);
   background-size: cover;
   background-position: 50%;
 }
