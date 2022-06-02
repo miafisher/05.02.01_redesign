@@ -16,6 +16,9 @@ body {
   margin-left: 5rem;
   margin-bottom: 5rem;
 }
+.cookie {
+  object-fit: cover;
+}
 .tekst h5 {
   /* display: grid;
   width: 50%;
@@ -31,6 +34,11 @@ body {
 .tekst p {
   text-align: left;
   margin: 0px;
+  font-family: "Avenir Book";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.2rem;
+  line-height: 25px;
 }
 img {
   width: 100%;
@@ -193,31 +201,67 @@ h6 {
 }
 .sb {
   width: 100%;
-  height: 20%;
+  display: grid;
 }
+.sb > * {
+  grid-column: 1;
+  grid-row: 1;
+}
+.sb img {
+  max-height: 250px;
 
-/* h4 {
-  position: absolute;
-  top: 9rem;
-  left: 35rem;
+  object-fit: cover;
+}
+.sb h4 {
+  /* position: absolute;
+  top: 10rem;
+  left: 40rem; */
   font-size: 60px;
   line-height: 60px;
   font-weight: 700;
   letter-spacing: 2px;
-  text-align: center;
-  color: #fff;
-} */
+  color: rgb(255, 255, 255);
+  place-self: center;
+}
 @media screen and (max-width: 500px) {
   .galleri {
     margin: 0;
     margin-top: 2rem;
   }
-  h4 {
-    position: absolute;
-    top: 6rem;
-    left: 8rem;
+
+  .tekst {
+    margin-left: 1rem;
+  }
+  a {
+    margin-bottom: 1rem;
+  }
+  #h4 {
+    top: 10rem;
+    left: 9rem;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .galleri {
+    margin: 0;
+    margin-top: 2rem;
+  }
+
+  .tekst {
+    margin-left: 1rem;
+    margin-top: 0;
+  }
+  a {
+    margin-bottom: 1rem;
   }
 }
 a {
   text-decoration: none;
+}
+.main-menu img {
+  width: auto;
+}
+h5 {
+  font-family: trajan-pro-3, serif;
+  font-size: 1.8rem;
+  font-weight: 600;
 }
