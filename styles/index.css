@@ -72,7 +72,7 @@ h3 {
 }
 
 .box_img1 {
-  background: url(/billeder/img_1.webp);
+  background: url(billeder/img_1.webp);
   background-size: cover;
   background-position: 50%;
 }
