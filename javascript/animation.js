@@ -42,18 +42,28 @@ btn.addEventListener("click", toggleMenu);
 
 const vidContainer = document.querySelector(".video-player");
 const vid = document.querySelector(".video-player video");
-const button = document.querySelector(".video-player-button");
+const playbutton = document.querySelector(".play-button");
+const pausebutton = document.querySelector(".pause-button");
+
 vid.playbackRate = 1; // Debug only
 
 function togglePlay() {}
 function togglePlay() {
   if (vid.paused) {
     vid.play();
+
+    playbutton.style.display = "none";
+    pausebutton.style.display = "inline-block";
+
     vidContainer.classList.add("playing");
-    button.textContent = "Pause";
+    playbutton.imgContent = "billeder/play.svg";
   } else {
     vid.pause();
-    button.textContent = "Play";
+
+    playbutton.style.display = "inline-block";
+    pausebutton.style.display = "none";
+
+    pausebutton.imgContent = "billeder/pause.svg";
     vidContainer.classList.remove("playing");
   }
 }
@@ -62,8 +72,11 @@ function videoEnded() {
   if (vidContainer.classList.contains("playing")) {
     vidContainer.classList.remove("playing");
   }
-  button.textContent = "Play";
+  playbutton.style.display = "inline-block";
+  pausebutton.style.display = "none";
+  playbutton.imgContent = "billeder/play.svg";
 }
 
-button.addEventListener("click", togglePlay);
+playbutton.addEventListener("click", togglePlay);
+pausebutton.addEventListener("click", togglePlay);
 vid.addEventListener("ended", videoEnded);
